@@ -1,4 +1,4 @@
-package com.inspur.BA.core.util;
+package util;
 
 import java.security.MessageDigest;
 

@@ -1,4 +1,4 @@
-package test;
+package util;
 
 import java.util.Random;
 
@@ -7,10 +7,10 @@ public class Salt {
 	
 	public String genSalt(int len){
 		String string="0123456789abcdefghijklmnopqrstuvwxyz 0123456"
-				+ "789ABCDEFGHIJKLMNOPQRSTUVWXYZ.¡¢£»¡££¬¡¢£»£º£¿£¡¡­¨D¡¥¡¦¡¨¡®"
-				+ "¡¡'¡°¡±¡©¡«¡¬¡Ã£¢£§£à£ü¡²¡³¡´¡µ¡¶¡·¡¸¡¹¡º¡»£®¡¼¡½¡¾¡¿£¨)£Û£Ý£û£ý¡°¡±¡¯¡®©°©±©²©³"
-				+ "©´©µ©¶©·©¤©¨©¬©À©Á©Â©Ã©Ä©Å©Æ©Ç©¦©ª©®©Ð©Ñ©Ò©Ó©Ô©Õ©Ö©×©à©á©â©ã©ä©æ©å©ç¦¦¦§¦©¦ª¦«¦¬¦­"
-				+ "¦®¦¯¦°¦±¦²¦³¦´¦µ¦¶¦·¦¸¦Á¦Â¦Ã¦Ä¦Å¦Æ¦Ç¦È¦É¦Ê¦Ë¦Ì¦Í¦Î¦Ï¦Ð¦Ñ¦Ò¦Ó¦Ô¦Õ¦Ð¦×¦Ø";
+				+ "789ABCDEFGHIJKLMNOPQRSTUVWXYZ.ã€ï¼›ã€‚ï¼Œã€ï¼›ï¼šï¼Ÿï¼â€¦â€•Ë‰Ë‡ã€ƒâ€˜"
+				+ "ã€€'â€œâ€ã€…ï½žâ€–âˆ¶ï¼‚ï¼‡ï½€ï½œã€”ã€•ã€ˆã€‰ã€Šã€‹ã€Œã€ã€Žã€ï¼Žã€–ã€—ã€ã€‘ï¼ˆ)ï¼»ï¼½ï½›ï½â€œâ€â€™â€˜â”Œâ”â”Žâ”"
+				+ "â”â”‘â”’â”“â”€â”„â”ˆâ”œâ”â”žâ”Ÿâ” â”¡â”¢â”£â”‚â”†â”Šâ”¬â”­â”®â”¯â”°â”±â”²â”³â”¼â”½â”¾â”¿â•€â•‚â•â•ƒÎ–Î—Î™ÎšÎ›ÎœÎ"
+				+ "ÎžÎŸÎ Î¡Î£Î¤Î¥Î¦Î§Î¨Î©Î±Î²Î³Î´ÎµÎ¶Î·Î¸Î¹ÎºÎ»Î¼Î½Î¾Î¿Ï€ÏÏƒÏ„Ï…Ï†Ï€ÏˆÏ‰";
 		Random random=new Random();
 		char[] o=new char[len];
 		for (int i = 0; i < len; i++) {
