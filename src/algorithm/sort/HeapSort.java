@@ -29,17 +29,15 @@ public class HeapSort {
             int k = i;  
             // 若当前节点的子节点存在  
             while (2 * k + 1 <= lastIndex) {  
-                // biggerIndex总是记录较大节点的值,先赋值为当前判断节点的左子节点  
+                // 找到左右孩子中的最大值，赋值给biggerIndex
                 int biggerIndex = 2 * k + 1;  
                 if (biggerIndex < lastIndex) {  
-                    // 若右子节点存在，否则此时biggerIndex应该等于 lastIndex  
                     if (arr[biggerIndex] < arr[biggerIndex + 1]) {  
-                        // 若右子节点值比左子节点值大，则biggerIndex记录的是右子节点的值  
                         biggerIndex++;  
                     }  
-                }  
+                } 
+                // 若当前节点值比子节点最大值小，则交换2者得值，交换后将biggerIndex值赋值给k
                 if (arr[k] < arr[biggerIndex]) {  
-                    // 若当前节点值比子节点最大值小，则交换2者得值，交换后将biggerIndex值赋值给k  
                     swap(arr, k, biggerIndex);  
                     k = biggerIndex;  
                 } else {  
