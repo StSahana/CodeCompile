@@ -4,7 +4,7 @@
 | 类                                     | 实现             | 最差时间复杂度    | 是否稳定 |
 | ------------------------------------- | -------------- | ---------- | ---- |
 | algorithm.idea.Assign                 | 比赛赛程安排,分治法     |            |      |
-| algorithm.idea.DecimalConversion      | 进制转换,递归实现      |            |      |
+| algorithm.idea.DecimalConversion      | 进制转换,递归实现,除N取余法     |            |      |
 | algorithm.map.Dijkstra                | Dijkstra算法     | O(n^2)     |      |
 | algorithm.map.Floyd                   | 多源最短路径         | O(n^3)     |      |
 | algorithm.sort.BinaryInsertionSort    | 二分插入排序         | O(n^2)     | 稳定   |
